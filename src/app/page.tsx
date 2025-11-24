@@ -62,7 +62,7 @@ export default function HomePage() {
           tagIcon={Star}
           textboxLayout="default"
           gridVariant="uniform-all-items-equal"
-          animationType="reveal-blur"
+          animationType="slide-up"
           features={[
             {
               title: "Handmade Pasta",

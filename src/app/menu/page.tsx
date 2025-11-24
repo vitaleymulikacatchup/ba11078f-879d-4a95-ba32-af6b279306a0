@@ -46,7 +46,7 @@ export default function MenuPage() {
           tagIcon={ChefHat}
           textboxLayout="default"
           gridVariant="uniform-all-items-equal"
-          animationType="reveal-blur"
+          animationType="slide-up"
           products={[
             {
               id: "carbonara",
@@ -87,7 +87,7 @@ export default function MenuPage() {
           tag="Experiences"
           tagIcon={Utensils}
           textboxLayout="default"
-          animationType="reveal-blur"
+          animationType="slide-up"
           plans={[
             {
               id: "casual-dining",
