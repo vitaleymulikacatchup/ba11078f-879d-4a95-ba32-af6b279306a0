@@ -5,8 +5,9 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import TagAbout from '@/components/sections/about/TagAbout';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
+import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { MessageCircle, Heart } from "lucide-react";
+import { MessageCircle, Heart, Users } from "lucide-react";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -59,6 +60,41 @@ export default function AboutPage() {
         <TagAbout
           tag="La Nostra Storia"
           description="At Smakachino, we bring the authentic flavors of Italy to your table. Our commitment to traditional recipes, handmade pasta, and premium imported ingredients creates an unforgettable dining experience that honors Italian culinary heritage while embracing modern presentation."
+        />
+      </div>
+
+      <div id="team" data-section="team">
+        <TeamCardOne
+          title="Meet Our Team"
+          description="The passionate individuals who bring authentic Italian flavors to your table"
+          tag="Our Team"
+          tagIcon={Users}
+          textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
+          members={[
+            {
+              id: "1",
+              name: "Marco Antonelli",
+              role: "Head Chef",
+              imageSrc: "https://pixabay.com/get/g3d8b5a6c8e3c9b1b45b8f2b3a5e6d9c7f8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p_1280.jpg",
+              imageAlt: "Marco Antonelli - Head Chef at Smakachino"
+            },
+            {
+              id: "2",
+              name: "Sofia Rossi",
+              role: "Sous Chef",
+              imageSrc: "https://pixabay.com/get/g2c7a4b8d9e0f1g2h3i4j5k6l7m8n9o0p1q2r3s4t5u6v7w8x9y0z1a2b3c4d5e6f_1280.jpg",
+              imageAlt: "Sofia Rossi - Sous Chef at Smakachino"
+            },
+            {
+              id: "3",
+              name: "Giuseppe Bianchi",
+              role: "Sommelier",
+              imageSrc: "https://pixabay.com/get/g5f8e9d0c1b2a3g4h5i6j7k8l9m0n1o2p3q4r5s6t7u8v9w0x1y2z3a4b5c6d7e8f9_1280.jpg",
+              imageAlt: "Giuseppe Bianchi - Sommelier at Smakachino"
+            }
+          ]}
         />
       </div>
 
