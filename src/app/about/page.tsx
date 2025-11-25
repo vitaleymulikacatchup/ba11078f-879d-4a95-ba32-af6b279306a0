@@ -2,10 +2,11 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
+import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import TagAbout from '@/components/sections/about/TagAbout';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Heart } from "lucide-react";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -35,6 +36,22 @@ export default function AboutPage() {
             text: "Book Table",
             href: "/contact"
           }}
+        />
+      </div>
+
+      <div id="hero" data-section="hero">
+        <HeroBillboard
+          title="About Smakachino"
+          description="Discover the authentic flavors of Italy through our passion for traditional recipes, handmade pasta, and premium imported ingredients in a warm, welcoming atmosphere."
+          tag="La Nostra Storia"
+          tagIcon={Heart}
+          imageSrc="https://pixabay.com/get/gcd6f8dbbc7c6e72ed3c2dfcd75697e7840a26e7ce3413f9a3c17b67f12f6cb0459d4199f6912bbe006835c0aa0e1140a13297f037bfaebd4112ff2bade80ccdd_1280.jpg"
+          imageAlt="Authentic Italian restaurant atmosphere at Smakachino"
+          frameStyle="card"
+          buttons={[
+            { text: "Our Menu", href: "/menu" },
+            { text: "Book Table", href: "/contact" }
+          ]}
         />
       </div>
 
